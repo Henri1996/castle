@@ -1,24 +1,28 @@
 import React, { Component } from 'react';
 import './App.css';
-import { read } from 'fs';
+import StarredResto from './mesCompo/StarredResto'
+import CardFilter from './mesCompo/CardFilter'
+import {BodyBackgroundColor} from 'react-body-backgroundcolor'
 //var fs = require('fs');
 //var myBuffer = require('./StarredRestaurant.js/index.js')
-import myBuffer from './StarredRestaurant'
+
+var green = '#39D1B4';
 class App extends Component {
   
   
   render() {
 
-  const listItems = Object.entries(myBuffer).map((d) => {
-  const [val ,key ] = d;
-  return <li> {val} </li>}
-  );
 
     //var listC = getObj.ToString().map((value)=> <li>{value}</li>)
     return (
-      <ul>
-       {listItems}
-      </ul>
+      <div  >
+        <h1 align="center">Comparator of French's castle</h1>
+          <p align="center">The best castles whith Starred restaurant!</p>
+          <h1></h1>
+        <StarredResto/>
+        
+      
+      </div>
     );
   }
    
