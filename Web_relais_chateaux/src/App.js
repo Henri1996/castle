@@ -17,7 +17,7 @@ class App extends Component {
     return (
       <div  >
         <h1 align="center">Comparator of French's castle</h1>
-          <p align="center">The best castles whith Starred restaurant!</p>
+          <p align="center">The best castles with Starred restaurant!</p>
           <h1></h1>
         <StarredResto/>
         
